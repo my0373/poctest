@@ -1,4 +1,11 @@
 ---
+  - name: Start and enable firewalld.
+    service:
+       name: firewalld
+       state: started
+       enabled: True
+    become: yes
+
   - name: Open SSH firewall port 22
     firewalld:
       service: ssh
