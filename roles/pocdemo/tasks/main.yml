@@ -1,0 +1,12 @@
+---
+# tasks file for node_deploy
+  - name: "Configure SELinux"
+    include: selinux.yaml
+
+# tasks file for node_deploy
+  - name: "Configure MOTD"
+    include: motd.yaml
+
+# tasks file for node_deploy
+  - name: "Configure Firewall"
+    include: firewall.yaml
